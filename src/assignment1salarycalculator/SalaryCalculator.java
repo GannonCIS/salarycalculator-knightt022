@@ -11,11 +11,12 @@ package assignment1salarycalculator;
  */
 public class SalaryCalculator {
     private String employeeName;
-    private int hours;
+    private int hours = 40;
     private int salary;
-    private double rate, pay;
+    private double rate = 8.25; 
+    private double pay;
     private int taxRate;
-    private int weeks;
+    private int weeks = 52;
     private int hourlyRate;
     
     public void employeeName( String John){
@@ -23,14 +24,12 @@ public class SalaryCalculator {
     }
     
     public int calcSalary(int hourlyRate){
-        hours = 40;
-        weeks = 52;
-        rate = 8.25;
-        salary = (int) (rate * hours * weeks);
+        
+        salary = hourlyRate * hours * weeks;
         
         System.out.println(salary);
-        
         return salary;
+        
     }
     
     public void calcHourly(int salary){

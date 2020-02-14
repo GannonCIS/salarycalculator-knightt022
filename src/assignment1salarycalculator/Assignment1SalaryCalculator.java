@@ -15,8 +15,11 @@ public class Assignment1SalaryCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-    }
+       SalaryCalculator sc = new SalaryCalculator();
+        System.out.println("Your salary: " +sc.calcSalary(8));
+        SalaryCalculator calcHourly = sc.calcHourly(salary);
+    } 
+    
     
     
 }
